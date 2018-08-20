@@ -1,0 +1,139 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_US
+% !TeX TS-program = pdflatex
+% !BIB TS-program = bibtex
+
+% Template for American Journal of Physics
+% Originally from the AJP website with new
+% customizations by Ted Corcovilos (2014) to accommodate BibTeX
+% including a custom BibTeX style file (AJP.bst) and hyperlinks
+
+\documentclass[prb,preprint,letterpaper,noeprint,longbibliography,nodoi,footinbib]{revtex4-1} 
+% The line above defines the type of LaTeX document.
+% Note that AJP uses the same style as Phys. Rev. B (prb).
+
+% The % character begins a comment, which continues to the end of the line.
+
+% BEGIN bibliography customizations
+\usepackage[colorlinks, allcolors=blue]{hyperref}
+\bibliographystyle{AJP}
+% END customizations
+
+\usepackage{amsmath}  % needed for \tfrac, \bmatrix, etc.
+\usepackage{amsfonts} % needed for bold Greek, Fraktur, and blackboard bold
+\usepackage{graphicx} % needed for figures
+
+\begin{document}
+
+% Be sure to use the \title, \author, \affiliation, and \abstract macros
+% to format your title page.  Don't use lower-level macros to  manually
+% adjust the fonts and centering.
+
+\title{Title}
+% In a long title you can use \\ to force a line break at a certain location.
+
+%\author{Daniel V. Schroeder}
+%\email{dschroeder@weber.edu} % optional
+%\altaffiliation[permanent address: ]{101 Main Street, 
+%  Anytown, USA} % optional second address
+%% If there were a second author at the same address, we would put another 
+%% \author{} statement here.  Don't combine multiple authors in a single
+%% \author statement.
+%\affiliation{Department of Physics, Weber State University, Ogden, UT 84408-2508}
+%% Please provide a full mailing address here.
+%
+%\author{David P. Jackson}
+%\email{ajp@dickinson.edu}
+%\affiliation{Department of Physics, Dickinson College, Carlisle, PA 17013}
+
+% See the REVTeX documentation for more examples of author and affiliation lists.
+
+\date{\today}
+
+\begin{abstract}
+
+Abstract...
+
+\end{abstract}
+% AJP requires an abstract for all regular article submissions.
+% Abstracts are optional for submissions to the "Notes and Discussions" section.
+
+\maketitle
+
+\section{Introduction}
+
+%\begin{figure}[h!]
+%% The bracketed code determines the figure's placement:  "h" stands for 
+%% "here", telling LaTeX to put the figure as close to the current location 
+%% as possible.  The ! overrides LaTeX's tendency to try to find a location 
+%% that it thinks is better.  But don't agonize over the exact figure placement 
+%% in your submitted manuscript.  For your initial submission, just make sure 
+%% each figure is reasonably close to where it's first referenced.
+%\centering
+%\includegraphics{fig/GasBulbData.eps}
+%\caption{Pressure as a function of temperature for a fixed volume of air.  
+%The three data sets are for three different amounts of air in the container. 
+%For an ideal gas, the pressure would go to zero at $-273^\circ$C.  (Notice
+%that this is a vector graphic, so it can be viewed at any scale without
+%seeing pixels.)}
+%\label{gasbulbdata}
+%\end{figure}
+% When an AJP manuscript is conditionally accepted for publication, we
+% will request an editable copy of the manuscript in which the figures 
+% themselves have been removed, and all figure captions have been moved
+% to the end.  You should then comment-out the \includegraphics line
+% and move the entire \begin{figure} ... \end{figure} block to the end
+% of the source file, just before \end{document}.
+
+% NOTE: place figure files in the `fig' folder and include this in the filename above.
+
+\section{Conclusion}
+
+
+%\appendix*   % Omit the * if there's more than one appendix.
+%
+%\section{Uninteresting stuff}
+%
+%Appendices are for material that is needed for completeness but
+%not sufficiently interesting to include in the main body of the paper.  Most
+%articles don't need any appendices, but feel free to use them when
+%appropriate.  This sample article needs an appendix only to illustrate how 
+%to create an appendix.
+
+
+\begin{acknowledgments}
+
+We gratefully acknowledge...
+
+\end{acknowledgments}
+
+% BEGIN While writing use BibTeX
+\bibliography{AJPTemplate} % For BibTex
+% END
+
+%BEGIN For final version, copy and paste contents of .bbl file here after running BibTeX (note: biber does not work in this case.)
+
+%\begin{thebibliography}{99}
+% The numeral (here 99) in curly braces is nominally the number of entries in
+% the bibliography. It's supposed to affect the amount of space around the
+% numerical labels, so only the number of digits should matter--and even that
+% seems to make no discernible difference.
+
+%\bibitem{noBIBTeX} Many \LaTeX\ users manage their bibliographic data with 
+%a tool called BIB\TeX.  Unfortunately, AJP cannot accept BIB\TeX\ files; all 
+%bibliographic references must be incorporated into the manuscript file
+%as shown here, at least when you send an editable file for production.
+
+%\end{thebibliography}
+
+% If your manuscript is conditionally accepted, the editors will ask you to
+% submit your editable LaTeX source file.  Before doing so, you should move
+% all tables and figure captions to the end, as shown below.  Tables come 
+% first, followed by figure captions (with figure inclusions commented-out).
+% Figures should be submitted as separate files, collected with the
+% LaTeX file into a single .zip archive.
+
+%\newpage   % Start a new page for tables
+
+
+\end{document}
